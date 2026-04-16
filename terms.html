@@ -46,7 +46,30 @@
       main {
         width: min(100%, var(--content-width));
         margin: 0 auto;
-        padding: 2rem 1.25rem 4rem;
+        padding: 1.25rem 1.25rem 4rem;
+      }
+
+      .topnav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+      }
+
+      .topnav a {
+        display: inline-block;
+        padding: 0.55rem 0.9rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.7);
+        color: var(--text);
+        font-size: 0.95rem;
+        text-decoration: none;
+      }
+
+      .topnav a:hover,
+      .topnav a:focus-visible {
+        background: var(--surface);
       }
 
       .hero {
@@ -92,7 +115,7 @@
         font-size: 0.98rem;
       }
 
-      .policy {
+      .panel {
         padding: 1.8rem;
         border: 1px solid var(--line);
         border-radius: var(--radius);
@@ -110,11 +133,11 @@
         font-size: 0.96rem;
       }
 
-      .policy p {
+      .panel p {
         margin: 0 0 1rem;
       }
 
-      .policy section + section {
+      .panel section + section {
         margin-top: 1.8rem;
         padding-top: 1.8rem;
         border-top: 1px solid var(--line);
@@ -153,12 +176,17 @@
           padding: 1rem 1rem 3rem;
         }
 
+        .topnav {
+          justify-content: flex-start;
+          flex-wrap: wrap;
+        }
+
         .hero img {
           height: 180px;
         }
 
         .hero__copy,
-        .policy {
+        .panel {
           padding: 1.2rem;
         }
       }
@@ -166,6 +194,11 @@
   </head>
   <body>
     <main>
+      <nav class="topnav" aria-label="Site links">
+        <a href="index.html">Home</a>
+        <a href="privacy/">Privacy</a>
+      </nav>
+
       <header class="hero">
         <img src="assets/splash-screen-fhd.jpg" alt="Artemis II Screensaver splash artwork" />
         <div class="hero__copy">
@@ -175,14 +208,14 @@
         </div>
       </header>
 
-      <article class="policy">
+      <article class="panel">
         <p class="notice">
           Artemis II Screensaver is an unofficial fan-made project and is not affiliated with, endorsed by, or
           sponsored by NASA or the Artemis program.
         </p>
         <p>
-          These Terms of Use ("Terms") govern your use of the Artemis II Screensaver ("the App"). By
-          installing or using the App, you agree to these Terms.
+          These Terms of Use ("Terms") govern your use of the Artemis II Screensaver ("the App"). By installing or
+          using the App, you agree to these Terms.
         </p>
 
         <section>
@@ -199,8 +232,8 @@
           <h2>2. Content</h2>
           <p>The App displays images that are included at the time of installation.</p>
           <p>
-            All images are provided for viewing purposes only. Ownership and rights to any included images remain
-            with their respective owners.
+            All images are provided for viewing purposes only. Ownership and rights to any included images remain with
+            their respective owners.
           </p>
         </section>
 
@@ -216,9 +249,7 @@
 
         <section>
           <h2>4. Disclaimer of Warranties</h2>
-          <p>
-            The App is provided "as is" without warranties of any kind, express or implied, including:
-          </p>
+          <p>The App is provided "as is" without warranties of any kind, express or implied, including:</p>
           <ul>
             <li>Fitness for a particular purpose.</li>
             <li>Reliability or availability.</li>
@@ -236,10 +267,7 @@
 
         <section>
           <h2>6. Changes to These Terms</h2>
-          <p>
-            These Terms may be updated from time to time. Continued use of the App constitutes acceptance of any
-            changes.
-          </p>
+          <p>These Terms may be updated from time to time. Continued use of the App constitutes acceptance of any changes.</p>
         </section>
 
         <section>

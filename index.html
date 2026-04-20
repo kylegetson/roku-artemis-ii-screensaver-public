@@ -159,6 +159,27 @@
         margin-top: 0.35rem;
       }
 
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1.25rem;
+        padding: 0.75rem 1.4rem;
+        background: var(--accent);
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 999px;
+        transition: opacity 0.15s;
+      }
+
+      .cta:hover,
+      .cta:focus-visible {
+        opacity: 0.85;
+        color: #fff;
+      }
+
       footer {
         margin-top: 1rem;
         color: var(--muted);
@@ -203,6 +224,15 @@
             A fan-made Roku screensaver built around NASA imagery from one of the most exciting missions on the path
             back to the Moon.
           </p>
+          <p style="margin: 1rem 0 0; font-size: 0.97rem; color: var(--muted);">
+            Free to install. To add it to your Roku, visit the Roku Channel Store and click <strong>Add channel</strong>.
+          </p>
+          <a
+            class="cta"
+            href="https://channelstore.roku.com/details/251a25cf3df17460fc3b7827d0c3b45e:c0bb35465a409f77458a51cf78c599f3/artemis-ii-screensaver"
+            target="_blank"
+            rel="noopener noreferrer"
+          >See Artemis II Screensaver on the Roku Store</a>
         </div>
       </header>
 
